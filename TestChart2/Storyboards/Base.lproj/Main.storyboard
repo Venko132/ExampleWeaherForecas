@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WLStartController" id="BYZ-38-t0r" customClass="WLStartController" customModule="TestChart2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="04E-q8-fbU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="04E-q8-fbU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="56m-oy-dZj"/>
+                            <constraint firstItem="04E-q8-fbU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Fl-oE-wwe"/>
+                            <constraint firstItem="04E-q8-fbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Erj-Lp-UfJ"/>
+                            <constraint firstItem="04E-q8-fbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yDk-ED-bwW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tblView" destination="04E-q8-fbU" id="yUo-tB-QiV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="115.59220389805098"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="pIj-Wf-3St">
+            <objects>
+                <viewController storyboardIdentifier="WLDetailController" id="oQv-2v-OIy" customClass="WLDetailController" customModule="TestChart2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P8j-7h-wIa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9A0-i3-RZs">
+                                <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qte-2o-99p">
+                                <rect key="frame" x="108.5" y="25" width="158" height="29"/>
+                                <segments>
+                                    <segment title="Date"/>
+                                    <segment title="t, min"/>
+                                    <segment title="t, max"/>
+                                </segments>
+                                <color key="tintColor" red="0.2416290083" green="0.56632486979999996" blue="0.71950316579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="actionChangeSoringType:" destination="oQv-2v-OIy" eventType="valueChanged" id="auZ-Dg-diC"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9A0-i3-RZs" firstAttribute="leading" secondItem="OeC-tO-73l" secondAttribute="leading" id="2QA-dS-iZ3"/>
+                            <constraint firstItem="qte-2o-99p" firstAttribute="centerX" secondItem="P8j-7h-wIa" secondAttribute="centerX" id="56G-2Z-jVj"/>
+                            <constraint firstItem="9A0-i3-RZs" firstAttribute="trailing" secondItem="OeC-tO-73l" secondAttribute="trailing" id="6r1-RL-hXW"/>
+                            <constraint firstItem="9A0-i3-RZs" firstAttribute="top" secondItem="qte-2o-99p" secondAttribute="bottom" constant="10" id="f23-Kv-uAe"/>
+                            <constraint firstItem="9A0-i3-RZs" firstAttribute="bottom" secondItem="OeC-tO-73l" secondAttribute="bottom" id="wzj-og-Ewn"/>
+                            <constraint firstItem="qte-2o-99p" firstAttribute="top" secondItem="OeC-tO-73l" secondAttribute="top" constant="5" id="zV1-BM-Z5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OeC-tO-73l"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmentControl" destination="qte-2o-99p" id="hS8-Ex-p2P"/>
+                        <outlet property="tblView" destination="9A0-i3-RZs" id="Wd3-SZ-BB9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZ3-Jc-FcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Line Chart Controller-->
+        <scene sceneID="943-ez-nkz">
+            <objects>
+                <viewController storyboardIdentifier="WLLineChartController" id="DgO-sU-TjI" customClass="WLLineChartController" customModule="TestChart2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kzZ-kF-ROa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXf-Yp-Byt" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EXf-Yp-Byt" firstAttribute="trailing" secondItem="RdB-tc-FZf" secondAttribute="trailing" id="BPX-FC-ETF"/>
+                            <constraint firstItem="EXf-Yp-Byt" firstAttribute="top" secondItem="RdB-tc-FZf" secondAttribute="top" id="ELh-JT-Niq"/>
+                            <constraint firstItem="EXf-Yp-Byt" firstAttribute="bottom" secondItem="RdB-tc-FZf" secondAttribute="bottom" id="Kih-BR-RPr"/>
+                            <constraint firstItem="EXf-Yp-Byt" firstAttribute="leading" secondItem="RdB-tc-FZf" secondAttribute="leading" id="aNs-ku-i1R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RdB-tc-FZf"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="chartView" destination="EXf-Yp-Byt" id="CpK-Kj-yU9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1l-Nw-8Ti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="208.24587706146929"/>
+        </scene>
+    </scenes>
+</document>

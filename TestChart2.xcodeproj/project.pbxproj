@@ -14,6 +14,32 @@
 		CE0827D8204E780700694566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0827D7204E780700694566 /* Assets.xcassets */; };
 		CE0827DB204E780700694566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0827D9204E780700694566 /* LaunchScreen.storyboard */; };
 		CE0827E9204E7B1900694566 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CE0827E8204E7B1900694566 /* .gitignore */; };
+		CE0827EB204E7B5D00694566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827EA204E7B5D00694566 /* Constants.swift */; };
+		CE0827ED204E7C2F00694566 /* HelperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827EC204E7C2F00694566 /* HelperManager.swift */; };
+		CE0827EF204E7C4200694566 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827EE204E7C4200694566 /* ApiManager.swift */; };
+		CE0827F1204E7E4300694566 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827F0204E7E4300694566 /* DataManager.swift */; };
+		CE0827F3204E87BD00694566 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827F2204E87BD00694566 /* Extensions.swift */; };
+		CE0827F6204E880400694566 /* DBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827F5204E880400694566 /* DBAlertController.swift */; };
+		CE0827F8204E89AA00694566 /* WLProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827F7204E89AA00694566 /* WLProtocols.swift */; };
+		CE0827FB204E8A1100694566 /* WLApiErrror.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827FA204E8A1100694566 /* WLApiErrror.swift */; };
+		CE0827FD204E8A7900694566 /* WLApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827FC204E8A7900694566 /* WLApiRouter.swift */; };
+		CE082801204E8EA500694566 /* WLStartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827FE204E8EA500694566 /* WLStartController.swift */; };
+		CE082802204E8EA500694566 /* WLStartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0827FF204E8EA500694566 /* WLStartCoordinator.swift */; };
+		CE082803204E8EA500694566 /* WLStartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE082800204E8EA500694566 /* WLStartViewModel.swift */; };
+		CE082807204EBB3800694566 /* WLBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE082806204EBB3800694566 /* WLBaseController.swift */; };
+		CE082809204EBEF800694566 /* WLStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE082808204EBEF800694566 /* WLStates.swift */; };
+		CE08280B204EC18600694566 /* WLDocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08280A204EC18600694566 /* WLDocumentModel.swift */; };
+		CE08280D204EC2B400694566 /*  WLWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08280C204EC2B400694566 /*  WLWeatherForecast.swift */; };
+		CE08280F204EC51600694566 /* WLDocumentsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE08280E204EC51600694566 /* WLDocumentsList.plist */; };
+		CE082815204ED53D00694566 /* WLDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE082812204ED53D00694566 /* WLDetailController.swift */; };
+		CE082816204ED53D00694566 /* WLDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE082813204ED53D00694566 /* WLDetailCoordinator.swift */; };
+		CE082817204ED53D00694566 /* WLDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE082814204ED53D00694566 /* WLDetailViewModel.swift */; };
+		CE4BD5EF204FCECB00EDE17B /* WLWeatherForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BD5ED204FCECB00EDE17B /* WLWeatherForecastCell.swift */; };
+		CE4BD5F0204FCECB00EDE17B /* WLWeatherForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4BD5EE204FCECB00EDE17B /* WLWeatherForecastCell.xib */; };
+		CE4BD5F52050173D00EDE17B /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4BD5F32050173D00EDE17B /* Chart.storyboard */; };
+		CE4BD5F9205017F000EDE17B /* WLLineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BD5F6205017F000EDE17B /* WLLineChartController.swift */; };
+		CE4BD5FA205017F000EDE17B /* WLLineChartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BD5F7205017F000EDE17B /* WLLineChartCoordinator.swift */; };
+		CE4BD5FB205017F000EDE17B /* WLLineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BD5F8205017F000EDE17B /* WLLineChartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +52,32 @@
 		CE0827DA204E780700694566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0827DC204E780700694566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0827E8204E7B1900694566 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CE0827EA204E7B5D00694566 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE0827EC204E7C2F00694566 /* HelperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperManager.swift; sourceTree = "<group>"; };
+		CE0827EE204E7C4200694566 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		CE0827F0204E7E4300694566 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CE0827F2204E87BD00694566 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE0827F5204E880400694566 /* DBAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlertController.swift; sourceTree = "<group>"; };
+		CE0827F7204E89AA00694566 /* WLProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProtocols.swift; sourceTree = "<group>"; };
+		CE0827FA204E8A1100694566 /* WLApiErrror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLApiErrror.swift; sourceTree = "<group>"; };
+		CE0827FC204E8A7900694566 /* WLApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLApiRouter.swift; sourceTree = "<group>"; };
+		CE0827FE204E8EA500694566 /* WLStartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStartController.swift; sourceTree = "<group>"; };
+		CE0827FF204E8EA500694566 /* WLStartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStartCoordinator.swift; sourceTree = "<group>"; };
+		CE082800204E8EA500694566 /* WLStartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStartViewModel.swift; sourceTree = "<group>"; };
+		CE082806204EBB3800694566 /* WLBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseController.swift; sourceTree = "<group>"; };
+		CE082808204EBEF800694566 /* WLStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStates.swift; sourceTree = "<group>"; };
+		CE08280A204EC18600694566 /* WLDocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLDocumentModel.swift; sourceTree = "<group>"; };
+		CE08280C204EC2B400694566 /*  WLWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " WLWeatherForecast.swift"; sourceTree = "<group>"; };
+		CE08280E204EC51600694566 /* WLDocumentsList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WLDocumentsList.plist; sourceTree = "<group>"; };
+		CE082812204ED53D00694566 /* WLDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLDetailController.swift; sourceTree = "<group>"; };
+		CE082813204ED53D00694566 /* WLDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLDetailCoordinator.swift; sourceTree = "<group>"; };
+		CE082814204ED53D00694566 /* WLDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLDetailViewModel.swift; sourceTree = "<group>"; };
+		CE4BD5ED204FCECB00EDE17B /* WLWeatherForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLWeatherForecastCell.swift; sourceTree = "<group>"; };
+		CE4BD5EE204FCECB00EDE17B /* WLWeatherForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLWeatherForecastCell.xib; sourceTree = "<group>"; };
+		CE4BD5F42050173D00EDE17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.storyboard; sourceTree = "<group>"; };
+		CE4BD5F6205017F000EDE17B /* WLLineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLineChartController.swift; sourceTree = "<group>"; };
+		CE4BD5F7205017F000EDE17B /* WLLineChartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLineChartCoordinator.swift; sourceTree = "<group>"; };
+		CE4BD5F8205017F000EDE17B /* WLLineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLineChartViewModel.swift; sourceTree = "<group>"; };
 		E801271F0E1CBC75703D9BD7 /* Pods-TestChart2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChart2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestChart2/Pods-TestChart2.release.xcconfig"; sourceTree = "<group>"; };
 		F7DE595CA098DABDB4F6018B /* Pods_TestChart2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestChart2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +125,7 @@
 		CE0827CF204E780700694566 /* TestChart2 */ = {
 			isa = PBXGroup;
 			children = (
+				CE0827F4204E87CC00694566 /* Resources */,
 				CE0827E4204E782900694566 /* Helpers */,
 				CE0827E3204E782000694566 /* Models */,
 				CE0827E2204E780F00694566 /* VIews */,
@@ -90,6 +143,7 @@
 			children = (
 				CE0827E7204E784E00694566 /* Controllers */,
 				CE0827E6204E784800694566 /* Custom */,
+				CE4BD5F1204FCED400EDE17B /* Cells */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -97,6 +151,8 @@
 		CE0827E3204E782000694566 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE08280A204EC18600694566 /* WLDocumentModel.swift */,
+				CE08280C204EC2B400694566 /*  WLWeatherForecast.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +160,13 @@
 		CE0827E4204E782900694566 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CE0827EA204E7B5D00694566 /* Constants.swift */,
+				CE0827EC204E7C2F00694566 /* HelperManager.swift */,
+				CE0827F9204E89FB00694566 /* Api */,
+				CE0827F0204E7E4300694566 /* DataManager.swift */,
+				CE0827F2204E87BD00694566 /* Extensions.swift */,
+				CE0827F7204E89AA00694566 /* WLProtocols.swift */,
+				CE082808204EBEF800694566 /* WLStates.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -113,6 +176,7 @@
 			children = (
 				CE0827D4204E780700694566 /* Main.storyboard */,
 				CE0827D9204E780700694566 /* LaunchScreen.storyboard */,
+				CE4BD5F32050173D00EDE17B /* Chart.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -127,8 +191,78 @@
 		CE0827E7204E784E00694566 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE082805204EBAE200694566 /* Base */,
+				CE082804204EBADC00694566 /* Start */,
+				CE082810204ED3CA00694566 /* Detail */,
+				CE082811204ED3F700694566 /* Charts */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE0827F4204E87CC00694566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE0827F5204E880400694566 /* DBAlertController.swift */,
+				CE08280E204EC51600694566 /* WLDocumentsList.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE0827F9204E89FB00694566 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				CE0827EE204E7C4200694566 /* ApiManager.swift */,
+				CE0827FA204E8A1100694566 /* WLApiErrror.swift */,
+				CE0827FC204E8A7900694566 /* WLApiRouter.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		CE082804204EBADC00694566 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				CE0827FE204E8EA500694566 /* WLStartController.swift */,
+				CE0827FF204E8EA500694566 /* WLStartCoordinator.swift */,
+				CE082800204E8EA500694566 /* WLStartViewModel.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		CE082805204EBAE200694566 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE082806204EBB3800694566 /* WLBaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE082810204ED3CA00694566 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CE082812204ED53D00694566 /* WLDetailController.swift */,
+				CE082813204ED53D00694566 /* WLDetailCoordinator.swift */,
+				CE082814204ED53D00694566 /* WLDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CE082811204ED3F700694566 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CE4BD5F6205017F000EDE17B /* WLLineChartController.swift */,
+				CE4BD5F7205017F000EDE17B /* WLLineChartCoordinator.swift */,
+				CE4BD5F8205017F000EDE17B /* WLLineChartViewModel.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		CE4BD5F1204FCED400EDE17B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE4BD5ED204FCECB00EDE17B /* WLWeatherForecastCell.swift */,
+				CE4BD5EE204FCECB00EDE17B /* WLWeatherForecastCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E70AB7DD4209672C8BF0E999 /* Frameworks */ = {
@@ -202,7 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0827E9204E7B1900694566 /* .gitignore in Resources */,
+				CE08280F204EC51600694566 /* WLDocumentsList.plist in Resources */,
+				CE4BD5F0204FCECB00EDE17B /* WLWeatherForecastCell.xib in Resources */,
 				CE0827DB204E780700694566 /* LaunchScreen.storyboard in Resources */,
+				CE4BD5F52050173D00EDE17B /* Chart.storyboard in Resources */,
 				CE0827D8204E780700694566 /* Assets.xcassets in Resources */,
 				CE0827D6204E780700694566 /* Main.storyboard in Resources */,
 			);
@@ -219,12 +356,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestChart2/Pods-TestChart2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -273,8 +412,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE082816204ED53D00694566 /* WLDetailCoordinator.swift in Sources */,
+				CE082809204EBEF800694566 /* WLStates.swift in Sources */,
+				CE08280D204EC2B400694566 /*  WLWeatherForecast.swift in Sources */,
+				CE4BD5FB205017F000EDE17B /* WLLineChartViewModel.swift in Sources */,
+				CE082815204ED53D00694566 /* WLDetailController.swift in Sources */,
 				CE0827D3204E780700694566 /* ViewController.swift in Sources */,
+				CE0827F8204E89AA00694566 /* WLProtocols.swift in Sources */,
+				CE4BD5FA205017F000EDE17B /* WLLineChartCoordinator.swift in Sources */,
+				CE0827F1204E7E4300694566 /* DataManager.swift in Sources */,
+				CE082801204E8EA500694566 /* WLStartController.swift in Sources */,
+				CE0827ED204E7C2F00694566 /* HelperManager.swift in Sources */,
+				CE0827EF204E7C4200694566 /* ApiManager.swift in Sources */,
+				CE0827FD204E8A7900694566 /* WLApiRouter.swift in Sources */,
+				CE08280B204EC18600694566 /* WLDocumentModel.swift in Sources */,
+				CE4BD5EF204FCECB00EDE17B /* WLWeatherForecastCell.swift in Sources */,
+				CE082817204ED53D00694566 /* WLDetailViewModel.swift in Sources */,
+				CE0827F6204E880400694566 /* DBAlertController.swift in Sources */,
 				CE0827D1204E780700694566 /* AppDelegate.swift in Sources */,
+				CE082802204E8EA500694566 /* WLStartCoordinator.swift in Sources */,
+				CE082803204E8EA500694566 /* WLStartViewModel.swift in Sources */,
+				CE4BD5F9205017F000EDE17B /* WLLineChartController.swift in Sources */,
+				CE0827FB204E8A1100694566 /* WLApiErrror.swift in Sources */,
+				CE0827EB204E7B5D00694566 /* Constants.swift in Sources */,
+				CE0827F3204E87BD00694566 /* Extensions.swift in Sources */,
+				CE082807204EBB3800694566 /* WLBaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +457,14 @@
 				CE0827DA204E780700694566 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4BD5F32050173D00EDE17B /* Chart.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4BD5F42050173D00EDE17B /* Base */,
+			);
+			name = Chart.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
